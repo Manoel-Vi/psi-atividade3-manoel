@@ -8,7 +8,6 @@ from database import criar_banco, nova_sessao
 from operacoes import devolver_livro, emprestar_livro
 from seed import popular_banco
 
-
 criar_banco()
 
 with nova_sessao() as session:
