@@ -17,5 +17,6 @@ def popular_banco(session):
         Livro(titulo = "Filosofatos", ano = 2000, disponivel = True, autor_id = 3),
     ]
 
-    session.add_all(autores, livros)
+    session.add_all(autores)
+    session.add_all(livros)
     session.commit()
